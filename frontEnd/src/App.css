@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(121, 121, 121);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.app {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-body {
+    height: 100vh;
+    user-select: none;
+
+}
+
+.RHeader1 {
+    background-color: rgb(251, 192, 45);
+    margin: 0 10%;
+    padding: 1.2rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.RHeader1 ul li a:hover {
+    /* color: aqua; */
+    padding-bottom: 19px;
+    border-bottom: 10px solid brown;
+}
+
+.RHeader1 h1 {
+    color: rgb(15, 14, 14);
+    font-size: 2rem;
+}
+
+.RHeader1 ul {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.RHeader1 ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.RHeader1 .searchbox {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 5px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.RHeader1 .searchbox input {
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.RHeader1 .searchbox button {
+    height: 2rem;
+    width: 5rem;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.RHeader1 .searchbox button:hover {
+    font-size: 1.2rem;
+}
+
+.RHeader1 .searchbox button:active {
+    color: rgb(27, 169, 84);
+}
+
+
+
+/* main           */
+
+.cont-index {
+    background-color: rgba(245, 245, 245, 0.144);
+    margin: 60px 10%;
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.cont-index img {
+    width: 20rem;
+    object-fit: contain;
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.cont-index button {
+    width: 7rem;
+    height: 4rem;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 700;
+    margin: 10px;
+    position: relative;
+    right: 20px;
+    border-radius: 10px;
+
+    border-color: rgb(0, 123, 255);
+    border-width: 6px;
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.442);
+
+}
+
+.cont-index button a {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+}
+
+.cont-index button:hover {
+    font-size: 30px;
+}
+
+.cont-index button:active {
+    font-size: 30px;
+    color: rgb(26, 185, 71);
+}
+
+/* login */
+
+
+.cont-login,
+.cont-register,
+.cont-foorgotpwd,
+.cont-forgotpwdotp,
+.cont-resetpwd {
+    /* background-color: whitesmoke; */
+    margin: 20px 10%;
+    padding: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+/* .cont-login .form h1{
+    margin-top: 10px;
+} */
+
+.cont-login .form,
+.cont-register .form,
+.cont-foorgotpwd .form,
+.cont-forgotpwdotp .form,
+.cont-resetpwd .form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 20px 0;
+    padding-bottom: 5%;
+}
+
+.cont-login .form label,
+.cont-register .form label,
+.cont-foorgotpwd .form label,
+.cont-forgotpwdotp .form label,
+.cont-resetpwd .form label {
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+}
+
+
+.cont-login .form input,
+.cont-register .form input,
+.cont-foorgotpwd .form input,
+.cont-forgotpwdotp .form input,
+.cont-resetpwd .form input {
+    padding: 10px;
+    width: 100%;
+    height: 2.4rem;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.cont-login .form button,
+.cont-register .form button,
+.cont-foorgotpwd .form button,
+.cont-forgotpwdotp .form button,
+.cont-resetpwd .form button {
+    width: 2rem;
+    height: 2.5rem;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(251, 192, 45);
+    cursor: pointer;
+}
+
+.cont-login .form button:hover,
+.cont-foorgotpwd .form button:hover,
+.cont-forgotpwdotp .form button:hover {
+    font-size: 1.2rem;
+}
+
+.cont-login .form button:active,
+.cont-foorgotpwd .form button:active,
+.cont-forgotpwdotp .form button:active {
+    color: rgb(20, 140, 66);
+}
+
+.cont-login .form a {
+    text-decoration: none;
+    width: 18.5em;
+    height: 1.3rem;
+    border: 1px solid black;
+}
+
+.cont-login .form .fpwd {
+    text-align: right;
+    border: 0;
+    padding-right: 5px;
+}
+
+.cont-login .ic1 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 38.6%;
+    right: 41%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.474);
+}
+
+
+/* Register */
+
+.cont-register .form button:hover {
+    font-size: 1.2rem;
+}
+
+.cont-register .form button:active {
+    color: rgb(20, 140, 66);
+}
+
+.cont-register {
+    user-select: none;
+}
+
+.cont-register .form input[type="password"] {
+    position: relative;
+}
+
+.ic1,
+.ic2 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 61.2%;
+    right: 41%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.474);
+}
+
+.ic2 {
+    top: 71.3%;
+    right: 41%;
+}
+
+.cont-register .ic1,
+.cont-register .ic2 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 58.2%;
+    right: 41%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.474);
+}
+
+.cont-register .ic2 {
+    top: 68.3%;
+    right: 41%;
+}
+
+/* RFooter1 */
+
+.cont-Rfooter1 {
+    margin: 0 10%;
+    padding: 1.2rem;
+    background-color: whitesmoke;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.364);
+}
+
+/* Forgot Paswword */
+
+.cont-foorgotpwd {
+    user-select: none;
+}
+
+/* reset pwd */
+
+
+.cont-resetpwd .ic1,
+.cont-resetpwd .ic2 {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 37.3%;
+    right: 41%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.474);
+}
+
+.cont-resetpwd .ic2 {
+    top: 47.3%;
+    right: 41%;
+}
+
+/* Error404 */
+
+.Error404 {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Validations Errors warning */
+.pwd-inp-wrong {
+    outline: red;
+    border: 1px solid red !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.toast-success {
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: yellowgreen;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toast-close:active {
+    font-size: 1.6rem;
+}
+
+.toast-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.show-toast {}
+
+/* mobile */
+
+@media screen and (width <=320px) {
+    .RHeader1 {
+        margin: 0 10%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .RHeader1 ul li a:hover {
+        padding-bottom: 19px;
+        border-bottom: 10px solid brown;
+    }
+
+    .RHeader1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .RHeader1 ul li {
+        list-style: none;
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+/* @media screen and (width >=768px) and (width < 900px) {} */
